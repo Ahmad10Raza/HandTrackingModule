@@ -13,7 +13,6 @@ while True:
     img = detector.findHands(img, draw=True )
     lmList = detector.findPosition(img, draw=False)
     if len(lmList) != 0:
-        
         print(lmList[4])
 
     cTime = time.time()
@@ -25,6 +24,3 @@ while True:
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
-
-
-cv2.destroyAllWindows()
